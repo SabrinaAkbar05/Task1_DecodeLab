@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DecodeLabs — Frontend Development Project 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#" class="nav__logo">Decode<span>Labs</span></a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="about">
+      <div class="hero__content">
+        <p class="hero__label">Batch 2026 · Industrial Training Kit</p>
+        <h1 class="hero__title">Frontend<br /><em>Development</em></h1>
+        <p class="hero__subtitle">
+          Project 1 — Static Webpage Design. Mastering the fundamental
+          relationship between <strong>content</strong> and <strong>style</strong>.
+        </p>
+        <a href="#projects" class="btn btn--primary">View Project</a>
+      </div>
+      <figure class="hero__visual" aria-hidden="true">
+        <div class="hero__badge">
+          <span class="hero__badge-ring"></span>
+          <span class="hero__badge-text">P1</span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">Core Concepts</h2>
+        <p class="section-sub">What you learn in Project 1</p>
+        <div class="skills__grid">
+
+          <article class="skill-card">
+            <span class="skill-card__icon" aria-hidden="true">⟨/⟩</span>
+            <h3>Semantic HTML</h3>
+            <p>Use meaningful tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> — no div soup.</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-card__icon" aria-hidden="true">#</span>
+            <h3>CSS Engineering</h3>
+            <p>External stylesheets only. DRY principle via BEM methodology. No inline styles — ever.</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-card__icon" aria-hidden="true">▦</span>
+            <h3>Layout Systems</h3>
+            <p>CSS Grid for macro page structure. Flexbox for micro component alignment. Right tool, right job.</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-card__icon" aria-hidden="true">♿</span>
+            <h3>Accessibility (A11Y)</h3>
+            <p>Alt text on every image. Contrast ratio above 4.5:1. Proper heading hierarchy — no skipped levels.</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-card__icon" aria-hidden="true">✓</span>
+            <h3>W3C Validation</h3>
+            <p>Zero errors allowed. Code must pass W3C Validator and Lighthouse Audit before it ships.</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-card__icon" aria-hidden="true">IA</span>
+            <h3>Information Architecture</h3>
+            <p>Structure before code. Define the sitemap first. Findable content, minimal cognitive load.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS / CHECKLIST SECTION ===== -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title section-title--light">Flight Checklist</h2>
+        <p class="section-sub section-sub--light">Project 1 — Requirements</p>
+        <div class="checklist">
+
+          <div class="checklist__item">
+            <span class="checklist__tag">IA</span>
+            <div>
+              <h3>Information Architecture</h3>
+              <p>Logical sitemap defined before writing a single line of code.</p>
+            </div>
+          </div>
+
+          <div class="checklist__item">
+            <span class="checklist__tag">HTML</span>
+            <div>
+              <h3>Semantic Tags</h3>
+              <p>Use <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>. One and only one <code>&lt;h1&gt;</code> per page.</p>
+            </div>
+          </div>
+
+          <div class="checklist__item">
+            <span class="checklist__tag">CSS</span>
+            <div>
+              <h3>External Stylesheet</h3>
+              <p>DRY principle applied. No IDs for styling — classes only.</p>
+            </div>
+          </div>
+
+          <div class="checklist__item">
+            <span class="checklist__tag">LAYOUT</span>
+            <div>
+              <h3>Grid + Flexbox</h3>
+              <p>Grid handles macro page layout. Flexbox aligns micro components.</p>
+            </div>
+          </div>
+
+          <div class="checklist__item">
+            <span class="checklist__tag">ASSETS</span>
+            <div>
+              <h3>Optimised Images</h3>
+              <p>AVIF/WebP formats with explicit width and height to prevent CLS.</p>
+            </div>
+          </div>
+
+          <div class="checklist__item">
+            <span class="checklist__tag">AUDIT</span>
+            <div>
+              <h3>Quality Gate</h3>
+              <p>Pass W3C Validator and Lighthouse Audit. Zero errors allowed.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== IPO MODEL SECTION ===== -->
+    <section class="ipo" id="ipo">
+      <div class="container">
+        <h2 class="section-title">The Engineering Mindset</h2>
+        <p class="section-sub">IPO Model — Input · Process · Output</p>
+        <div class="ipo__steps">
+
+          <article class="ipo__step">
+            <span class="ipo__number">01</span>
+            <h3>Input</h3>
+            <p>Assets — images, icons, and text content gathered before coding begins.</p>
+          </article>
+
+          <span class="ipo__arrow" aria-hidden="true">→</span>
+
+          <article class="ipo__step">
+            <span class="ipo__number">02</span>
+            <h3>Process</h3>
+            <p>CSS Engineering — Box Model logic, layout systems, and style architecture.</p>
+          </article>
+
+          <span class="ipo__arrow" aria-hidden="true">→</span>
+
+          <article class="ipo__step">
+            <span class="ipo__number">03</span>
+            <h3>Output</h3>
+            <p>The View — a pixel-perfect, accessible, validated static render.</p>
+          </article>
+
+        </div>
+        <aside class="ipo__debug">
+          <strong>Debug by isolating the stage:</strong> Corrupted Input? Logical Error? Rendering Failure?
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT / MANDATE SECTION ===== -->
+    <section class="mandate">
+      <div class="container mandate__inner">
+        <figure class="mandate__visual" aria-hidden="true">
+          <div class="mandate__block mandate__block--a"></div>
+          <div class="mandate__block mandate__block--b"></div>
+          <div class="mandate__block mandate__block--c"></div>
+        </figure>
+        <div class="mandate__text">
+          <p class="mandate__eyebrow">The Architect's Mandate</p>
+          <h2>The frontend is the only part of the system the world will ever see.</h2>
+          <p>Build it well. That means semantic integrity, clean separation of concerns, and code that any developer — or any assistive technology — can read and understand at a glance.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer__inner">
+      <p class="footer__brand">DecodeLabs</p>
+      <address class="footer__contact">
+        <a href="mailto:decodelabs.tech@gmail.com">decodelabs.tech@gmail.com</a>
+        <span>Greater Lucknow, India</span>
+        <a href="https://www.decodelabs.tech" target="_blank" rel="noopener">www.decodelabs.tech</a>
+      </address>
+      <p class="footer__copy">© 2026 DecodeLabs · Batch 2026 · Project 1</p>
+    </div>
+  </footer>
+
+</body>
+</html>
